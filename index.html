@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="СтройМатериал+ — строительные материалы с предзаказом. Цемент, кирпич, песок, арматура и другое с доставкой.">
+  <title>СтройМатериал+ — строительные материалы с предзаказом</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo" aria-label="На главную">
+        <span class="logo__icon" aria-hidden="true"></span>
+        <span class="logo__text">СтройМатериал<span class="logo__plus">+</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <a href="#catalog" class="nav__link">Каталог</a>
+        <a href="#preorder" class="nav__link">Предзаказ</a>
+        <a href="#about" class="nav__link">О нас</a>
+        <a href="#contact" class="nav__link nav__link--cta">Связаться</a>
+        <a href="tel:+79001234567" class="nav__phone" aria-label="Позвонить: +7 (900) 123-45-67">+7 (900) 123-45-67</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="hero__badge">Опт и розница · Доставка по региону</p>
+          <h1 class="hero__title">Строительные материалы с&nbsp;предзаказом — в срок и по честной цене</h1>
+          <p class="hero__text">Складская программа цемента, кирпича, арматуры и отделочных материалов. Оформите предзаказ — закрепим цену и зарезервируем партию под ваш объект.</p>
+          <div class="hero__actions">
+            <a href="#catalog" class="btn btn--primary">Смотреть каталог</a>
+            <a href="#contact" class="btn btn--outline">Оставить заявку</a>
+          </div>
+          <ul class="hero__stats" aria-label="Преимущества">
+            <li><strong>12+</strong><span>лет на рынке</span></li>
+            <li><strong>48 ч</strong><span>средний срок отгрузки</span></li>
+            <li><strong>-7%</strong><span>при предзаказе от 10 т</span></li>
+          </ul>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__card hero__card--1">
+            <span class="hero__card-icon hero__card-icon--cement"></span>
+            <span>Цемент М500</span>
+          </div>
+          <div class="hero__card hero__card--2">
+            <span class="hero__card-icon hero__card-icon--brick"></span>
+            <span>Кирпич</span>
+          </div>
+          <div class="hero__card hero__card--3">
+            <span class="hero__card-icon hero__card-icon--rebar"></span>
+            <span>Арматура</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section catalog" id="catalog">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Каталог материалов</h2>
+          <p class="section__subtitle">Актуальные позиции со склада и под заказ. Цены указаны «от» — точная стоимость зависит от объёма и условий доставки.</p>
+        </header>
+        <div class="catalog__grid">
+          <article class="product-card" data-product="Цемент М500, мешок 50 кг">
+            <div class="product-card__image product-card__image--cement" role="img" aria-label="Цемент"></div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Цемент М500</h3>
+              <p class="product-card__desc">Мешки 50 кг, ГОСТ. Для фундаментов, стяжек и кладочных растворов.</p>
+              <p class="product-card__price">от 420 ₽</p>
+              <button type="button" class="btn btn--primary btn--sm product-card__btn" data-preorder>Предзаказ</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-product="Кирпич керамический полнотелый">
+            <div class="product-card__image product-card__image--brick" role="img" aria-label="Кирпич"></div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Кирпич керамический</h3>
+              <p class="product-card__desc">Полнотелый одинарный, морозостойкость F50. Паллеты от 500 шт.</p>
+              <p class="product-card__price">от 18 ₽ / шт</p>
+              <button type="button" class="btn btn--primary btn--sm product-card__btn" data-preorder>Предзаказ</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-product="Песок строительный мытый">
+            <div class="product-card__image product-card__image--sand" role="img" aria-label="Песок"></div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Песок строительный</h3>
+              <p class="product-card__desc">Мытый, модуль крупности 2,0–2,5. Навалом или в мешках Big Bag.</p>
+              <p class="product-card__price">от 850 ₽ / м³</p>
+              <button type="button" class="btn btn--primary btn--sm product-card__btn" data-preorder>Предзаказ</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-product="Арматура А500С, Ø12">
+            <div class="product-card__image product-card__image--rebar" role="img" aria-label="Арматура"></div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Арматура А500С</h3>
+              <p class="product-card__desc">Прутки Ø10–16 мм, длина 11,7 м. Сертификат качества в комплекте.</p>
+              <p class="product-card__price">от 62 000 ₽ / т</p>
+              <button type="button" class="btn btn--primary btn--sm product-card__btn" data-preorder>Предзаказ</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-product="Утеплитель минеральная вата 100 мм">
+            <div class="product-card__image product-card__image--insulation" role="img" aria-label="Утеплитель"></div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Минеральная вата</h3>
+              <p class="product-card__desc">Плиты 100×600×1200 мм, плотность 45 кг/м³. Для фасадов и кровли.</p>
+              <p class="product-card__price">от 1 290 ₽ / м³</p>
+              <button type="button" class="btn btn--primary btn--sm product-card__btn" data-preorder>Предзаказ</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-product="Металлочерепица Монтеррей">
+            <div class="product-card__image product-card__image--roof" role="img" aria-label="Кровля"></div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Металлочерепица</h3>
+              <p class="product-card__desc">Профиль Monterrey, полиэстер 0,45 мм. RAL на выбор под заказ.</p>
+              <p class="product-card__price">от 520 ₽ / м²</p>
+              <button type="button" class="btn btn--primary btn--sm product-card__btn" data-preorder>Предзаказ</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-product="Газобетон D500, 600×300×200">
+            <div class="product-card__image product-card__image--block" role="img" aria-label="Газобетон"></div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Газобетонные блоки</h3>
+              <p class="product-card__desc">D500, точная геометрия. Поддоны с завода, разгрузка манипулятором.</p>
+              <p class="product-card__price">от 6 800 ₽ / м³</p>
+              <button type="button" class="btn btn--primary btn--sm product-card__btn" data-preorder>Предзаказ</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-product="Щебень гранитный 5–20">
+            <div class="product-card__image product-card__image--gravel" role="img" aria-label="Щебень"></div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Щебень 5–20</h3>
+              <p class="product-card__desc">Гранитный, фракция 5–20 мм. Для бетона, дорожных оснований, дренажа.</p>
+              <p class="product-card__price">от 1 650 ₽ / м³</p>
+              <button type="button" class="btn btn--primary btn--sm product-card__btn" data-preorder>Предзаказ</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section preorder-info" id="preorder">
+      <div class="container">
+        <header class="section__header section__header--light">
+          <h2 class="section__title">Как работает предзаказ</h2>
+          <p class="section__subtitle">Фиксируем цену и резервируем товар до прибытия на склад или производства партии.</p>
+        </header>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">1</span>
+            <h3 class="step__title">Заявка</h3>
+            <p class="step__text">Оставьте заявку по телефону или через форму: укажите материал, объём и адрес объекта.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">2</span>
+            <h3 class="step__title">Расчёт</h3>
+            <p class="step__text">Менеджер перезвонит в течение 2 часов, уточнит сроки и выставит коммерческое предложение.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">3</span>
+            <h3 class="step__title">Резерв</h3>
+            <p class="step__text">После подтверждения резервируем партию. Залог по желанию — от 10% суммы для крупных заказов.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">4</span>
+            <h3 class="step__title">Доставка</h3>
+            <p class="step__text">Отгрузка обычно через 3–7 рабочих дней (зависит от позиции). Доставка своим транспортом или самовывоз.</p>
+          </li>
+        </ol>
+        <p class="preorder-note">* Сроки ориентировочные и согласуются индивидуально. При отмене предзаказа до отгрузки залог возвращается полностью.</p>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Почему выбирают нас</h2>
+        </header>
+        <div class="benefits">
+          <article class="benefit">
+            <div class="benefit__icon benefit__icon--quality" aria-hidden="true"></div>
+            <h3 class="benefit__title">Контроль качества</h3>
+            <p class="benefit__text">Работаем с проверенными заводами. Паспорта и сертификаты на каждую партию.</p>
+          </article>
+          <article class="benefit">
+            <div class="benefit__icon benefit__icon--delivery" aria-hidden="true"></div>
+            <h3 class="benefit__title">Доставка на объект</h3>
+            <p class="benefit__text">Собственный автопарк: тонары, манипуляторы, доставка в течение 1–2 дней после готовности.</p>
+          </article>
+          <article class="benefit">
+            <div class="benefit__icon benefit__icon--wholesale" aria-hidden="true"></div>
+            <h3 class="benefit__title">Оптовые цены</h3>
+            <p class="benefit__text">Скидки от объёма, отсрочка для постоянных клиентов, единый счёт на весь заказ.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <h2 class="section__title">Свяжитесь с нами</h2>
+          <p class="contact__lead">Принимаем заказы ежедневно с 8:00 до 20:00. Перезвоним и рассчитаем доставку бесплатно.</p>
+          <a href="tel:+79001234567" class="contact__phone">+7 (900) 123-45-67</a>
+          <p class="contact__meta">г. Москва, ул. Складская, 15<br>info@stroymaterial-plus.ru</p>
+        </div>
+        <form class="order-form" id="orderForm" novalidate>
+          <h3 class="order-form__title">Форма предзаказа</h3>
+          <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" required autocomplete="name" placeholder="Иван Петров">
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+7 (___) ___-__-__">
+          </div>
+          <div class="form-group">
+            <label for="product">Материал</label>
+            <select id="product" name="product" required>
+              <option value="">Выберите позицию</option>
+              <option value="Цемент М500, мешок 50 кг">Цемент М500</option>
+              <option value="Кирпич керамический полнотелый">Кирпич керамический</option>
+              <option value="Песок строительный мытый">Песок строительный</option>
+              <option value="Арматура А500С, Ø12">Арматура А500С</option>
+              <option value="Утеплитель минеральная вата 100 мм">Минеральная вата</option>
+              <option value="Металлочерепица Монтеррей">Металлочерепица</option>
+              <option value="Газобетон D500, 600×300×200">Газобетонные блоки</option>
+              <option value="Щебень гранитный 5–20">Щебень 5–20</option>
+              <option value="Другое">Другое / уточню в комментарии</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="quantity">Количество</label>
+            <input type="text" id="quantity" name="quantity" required placeholder="например: 50 мешков, 10 м³, 2 т">
+          </div>
+          <div class="form-group">
+            <label for="comment">Комментарий</label>
+            <textarea id="comment" name="comment" rows="3" placeholder="Адрес доставки, желаемая дата"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+          <p class="form-success" id="formSuccess" hidden role="status">Спасибо! Заявка принята. Менеджер свяжется с вами в ближайшее время.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">&copy; 2026 СтройМатериал+. Все права защищены.</p>
+      <p class="footer__note">Информация на сайте не является публичной офертой.</p>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="preorderModal" aria-labelledby="modalTitle">
+    <div class="modal__box">
+      <button type="button" class="modal__close" id="modalClose" aria-label="Закрыть">&times;</button>
+      <h2 class="modal__title" id="modalTitle">Быстрый предзаказ</h2>
+      <p class="modal__product" id="modalProduct"></p>
+      <form class="order-form order-form--modal" id="modalForm" novalidate>
+        <div class="form-group">
+          <label for="modalName">Ваше имя</label>
+          <input type="text" id="modalName" name="name" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="modalPhone">Телефон</label>
+          <input type="tel" id="modalPhone" name="phone" required autocomplete="tel">
+        </div>
+        <input type="hidden" id="modalProductInput" name="product">
+        <div class="form-group">
+          <label for="modalQuantity">Количество</label>
+          <input type="text" id="modalQuantity" name="quantity" required placeholder="например: 50 мешков, 10 м³">
+        </div>
+        <div class="form-group">
+          <label for="modalComment">Комментарий</label>
+          <textarea id="modalComment" name="comment" rows="2" placeholder="Адрес, срок доставки"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Отправить</button>
+        <p class="form-success" id="modalSuccess" hidden role="status">Заявка отправлена! Мы перезвоним вам.</p>
+      </form>
+      <p class="modal__alt">Или позвоните: <a href="tel:+79001234567">+7 (900) 123-45-67</a></p>
+    </div>
+  </dialog>
+
+  <a href="tel:+79001234567" class="call-fab" aria-label="Позвонить: +7 (900) 123-45-67">
+    <span class="call-fab__icon" aria-hidden="true"></span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
